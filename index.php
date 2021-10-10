@@ -20,7 +20,7 @@ function summary($str, $limit=100, $strip = false) {
 
 ?>
 
-    <?php require_once "./templates/header.php"; ?>
+    <?php include('./templates/header.php') ?>
 
         <div class="page-content my-5">
             <div class="container">
@@ -67,4 +67,4 @@ function summary($str, $limit=100, $strip = false) {
                 <button type="submit" class="btn btn-primary" name="btn_login">Submit</button>
             </form>
         </div>
-    <?php require_once "./templates/footer.php"; ?>
+    <?php include('./templates/footer.php'); ?>

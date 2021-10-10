@@ -1,9 +1,6 @@
 <?php
 
-$pdo = new PDO('mysql:host=localhost;port=3306;dbname=my_app_blog', 'root', '');
-
-$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
+require_once "connection.php";
 
 $errors = [];
 $title = '';
@@ -74,7 +71,7 @@ function generateRandomString($n) {
 ?>
 
 
-    <?php require_once "./templates/header.php" ?>
+    <?php include('./templates/header.php') ?>
         
         <div class="my-5 px-3 page-content">
             <div class="container">
@@ -104,5 +101,5 @@ function generateRandomString($n) {
             </div>
         </div> <!-- ./page-content -->
     
-    <?php require_once "./templates/footer.php" ?>
+    <?php include('./templates/footer.php'); ?>
 
