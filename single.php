@@ -17,7 +17,7 @@
 ?>
 
 
-<?php require_once "./templates/header.php"; ?>
+<?php include('./templates/header.php') ?>
     <div class="page-content single-page my-5">
         <div class="container">
             <div class="single-page-head">
@@ -34,4 +34,4 @@
         </div> <!-- ./container-->
     </div><!-- ./single-page -->
     
-<?php require_once "./templates/footer.php"; ?>
+<?php include('./templates/footer.php'); ?>
