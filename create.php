@@ -18,11 +18,11 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         $date = date('Y-m-d H:i:s');
 
     if(!$title) {
-        $errors[] = 'Title Required';
+        $errors[] = 'Title required!';
     }
 
     if(!$content) {
-        $errors[] = 'Content Required';
+        $errors[] = 'Content required!';
     }
 
     if(!is_dir('images')) {
